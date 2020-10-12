@@ -8,7 +8,7 @@ const query = `
 
 var story = {
   0: {
-    image: "./0.5.png",
+    image: "./assets//1.2move.jpeg",
     choices: [
       {
            choiceText: "Move Barrel",
@@ -17,38 +17,39 @@ var story = {
     ]
   },
   1: {
-   image: "./2entertunnel.png",
+   image: "./assets/2entertunnel.png",
       choices: [
         {
              choiceText: "Enter Tunnel",
-             storyLink: 3
+             storyLink: 2
         }
       ]
   },
   2: {
-      image: "./3beachlook.jpeg",
+      image: "./assets/3beachlook.jpeg",
       choices: [
         {
              choiceText: "Look Out",
-             storyLink: 4
+             storyLink: 3
         }
       ]
   },
   3: {
-    image: "./4readnote.jpeg",
+    image: "./assets/4readnote.jpeg",
+    text: "It's too dark...",
     choices: [
       {
-           choiceText: "Light a Match ",
-           storyLink: 5
+           choiceText: "Leave ",
+           storyLink: 4
       },
       {
-           choiceText: "Leave",
-           storyLink: 2
+           choiceText: "Light a Match",
+           storyLink: 7
       }
     ]
    },
   4: {
-    image: "./6getonboat.jpeg",
+    image: "./assets/6getonboat.jpeg",
     choices: [
       {
            choiceText: "Get on Boat",
@@ -57,7 +58,7 @@ var story = {
     ]
    },
   5: {
-    image: "./7playagain.png",
+    image: "./assets/7playagain.png",
     choices: [
       {
            choiceText: "Fin - Replay? How's your friend?",
@@ -66,14 +67,34 @@ var story = {
     ]
   },
   6: {
-    image: "./11.png",
+    image: "./assets/1.2move.jpeg",
     choices: [
       {
            choiceText: "Leave",
            storyLink: 1
       }
     ]
-   },
+  },
+  7: {
+    image: "./assets/1.2move.jpeg",
+    choices: [
+      {
+           choiceText: "Sit with friend.",
+           storyLink: 8
+      }
+    ]
+
+  },
+    8: {
+    image: "./assets/bookphone.jpeg",
+    choices: [
+      {
+           choiceText: "Stay.",
+           storyLink: 5
+      }
+    ]
+
+  }
 }
 
 function GameViewModal() {

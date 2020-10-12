@@ -22,7 +22,7 @@
 <div class="scene game-view" data-bind="visible: gameOn">
   <div class="scene__content">
     <img class="scene__image" data-bind="visible: gameImg, attr: { src: gameImg }" />
-    <h2 class="scene__text" data-bind="text: gameText"></h2>
+    <h2 class="scene__text"></h2>
     <div class="scene__choices" data-bind="foreach: gameChoices">
       <button class="scene__choice" data-bind="text: choiceText, click: changeScene">Click Here to
         Start</button>
